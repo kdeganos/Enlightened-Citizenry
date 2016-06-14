@@ -1,4 +1,4 @@
-<h3>Bill</h3>
+{{#each model as |bill|}}<h3>Bill {{bill.bill_id}}</h3>{{/each}}
 
 <div class="bill">
   <tr>
@@ -13,7 +13,7 @@
   <tr>
     <td>{{bill.official_title}}</td>
     <td>{{bill.introduced_on}}</td>
-    <td>{{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</td>
+    {{#link-to 'sponsor' bill.sponsor_id}}<td>{{bill.sponsor.first_name}} {{bill.sponsor.last_name}}</td>{{/link-to}}
     <td>{{bill.committee_ids}}</td>
     <td>{{bill.chamber}}</td>
     <td><a href="{{bill.urls.govtrack}}">Click Here</a></td>

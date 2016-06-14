@@ -1,0 +1,14 @@
+<h3>Upcoming Senate Bills ({{model.length}})</h3>
+<table class="upcoming-bills">
+<tr>
+    <th>Bill ID</th>
+    <th>Description</th>
+</tr>
+
+{{#each model as |upcomingsenate|}}
+<tr>
+  <td>{{upcomingsenate.bill_id}}</td>
+  <td>{{upcomingsenate.context}}</td>
+</tr>
+{{/each}}
+</table>

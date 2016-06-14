@@ -1,0 +1,14 @@
+<h3>Upcoming House Bills ({{model.length}})</h3>
+<table class="upcoming-bills">
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+</tr>
+
+{{#each model as |upcominghouse|}}
+<tr>
+  <td>{{upcominghouse.name}}</td>
+  <td>{{upcominghouse.description}}</td>
+</tr>
+{{/each}}
+</table>
