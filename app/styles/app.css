@@ -12,6 +12,10 @@ tr:nth-child(even) {
   background-color:#ecf0f1;
 }
 
+.bill tr:nth-child(even) {
+  background-color:#fff;
+}
+
 .navbar {
   margin-bottom:10px;
   border-bottom: 1px #ccc solid;
@@ -22,9 +26,7 @@ h3 {
 }
 
 .legislatorlookup {margin-left:45px}
-
 .legislators {width:95%;border:1px #ccc solid;margin: 0 auto}
-
 .committees {width:95%;border:1px #ccc solid;margin: 0 auto}
-
 .bills {width:95%;border:1px #ccc solid;margin: 0 auto}
+.bill {width:95%;border:1px #ccc solid;margin: 0 auto}
