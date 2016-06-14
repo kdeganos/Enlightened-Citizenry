@@ -1,11 +1,18 @@
+<h3>Legislators</h3>
+<table class="legislators">
 <tr>
-    <td>Name</td>
-    <td>State</td>
-    <td>Contact Info</td>
+    <th>Name</th>
+    <th>State</th>
+    <th>Contact Info</th>
+    <th>Twitter</th>
 </tr>
 
   {{#each model as |legislator|}}
   <tr>
-    <td> {{legislator.title}} {{legislator.first_name}} {{legislator.last_name}}</td><td>{{legislator.state}}</td><td><a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></td>
+    <td> {{legislator.title}} {{legislator.first_name}} {{legislator.last_name}}</td>
+    <td>{{legislator.state}}</td>
+    <td><a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></td>
+    <td><a href="http://twitter.com/{{legislator.twitter_id}}">{{legislator.twitter_id}}</a></td>
   </tr>
   {{/each}}
+</table>

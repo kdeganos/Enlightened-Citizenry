@@ -1,1 +1,14 @@
-{{outlet}}
+<h3>Committees</h3>
+<table class="committees">
+<tr>
+    <th>Name</th>
+    <th>ID</th>
+</tr>
+
+{{#each model as |committee|}}
+<tr>
+  <td>{{committee.name}}</td>
+  <td>{{committee.committee_id}}</td>
+</tr>
+{{/each}}
+</table>

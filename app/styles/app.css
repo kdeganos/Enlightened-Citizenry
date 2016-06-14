@@ -1,3 +1,8 @@
+th {
+  padding:15px;
+  border-bottom:1px #ccc solid;
+}
+
 tr td {
   padding:15px;
   border-bottom:1px #ccc solid;
@@ -11,3 +16,13 @@ tr:nth-child(even) {
   margin-bottom:10px;
   border-bottom: 1px #ccc solid;
 }
+
+h3 {
+  margin-left:45px;
+}
+
+.legislatorlookup {margin-left:45px}
+
+.legislators {width:95%;border:1px #ccc solid;margin: 0 auto}
+
+.committees {width:95%;border:1px #ccc solid;margin: 0 auto}
