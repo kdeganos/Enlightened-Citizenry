@@ -7,7 +7,7 @@
 
 {{#each model as |committee|}}
 <tr>
-  <td>{{committee.name}}</td>
+  {{#link-to 'subcommittees' committee.committee_id}}<td>{{committee.name}}</td>{{/link-to}}
   <td>{{committee.committee_id}}</td>
 </tr>
 {{/each}}

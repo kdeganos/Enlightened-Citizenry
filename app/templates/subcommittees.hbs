@@ -1,0 +1,14 @@
+<h3>Subcommittees</h3>
+<table class="subcommittees">
+<tr>
+    <th>Name</th>
+    <th>ID</th>
+</tr>
+
+{{#each model as |subcommittee|}}
+<tr>
+  <td>{{subcommittee.name}}</td>
+  <td>{{subcommittee.committee_id}}</td>
+</tr>
+{{/each}}
+</table>
