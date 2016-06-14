@@ -1,0 +1,13 @@
+tr td {
+  padding:15px;
+  border-bottom:1px #ccc solid;
+}
+
+tr:nth-child(even) {
+  background-color:#ecf0f1;
+}
+
+.navbar {
+  margin-bottom:10px;
+  border-bottom: 1px #ccc solid;
+}

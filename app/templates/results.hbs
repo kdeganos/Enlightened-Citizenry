@@ -1,0 +1,11 @@
+<tr>
+    <td>Name</td>
+    <td>State</td>
+    <td>Contact Info</td>
+</tr>
+
+  {{#each model as |legislator|}}
+  <tr>
+    <td> {{legislator.title}} {{legislator.first_name}} {{legislator.last_name}}</td><td>{{legislator.state}}</td><td><a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></td>
+  </tr>
+  {{/each}}
